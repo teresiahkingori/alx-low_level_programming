@@ -4,7 +4,7 @@
  **
  ** @n: number times table (0 < n <= 15)
  **
- ** Return: no return
+ ** Return: Return 0
  **/
 void print_times_table(int n)
 {
