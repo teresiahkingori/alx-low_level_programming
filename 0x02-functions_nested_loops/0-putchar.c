@@ -1,4 +1,4 @@
-#include <putchar.h>
+#include "update_putchar.c"
 /**
  * main - Entry point
  * Return: Always 0 (Success)
@@ -13,4 +13,3 @@ sh++;
 }
 _putchar('\n');
 return (0);
-}
