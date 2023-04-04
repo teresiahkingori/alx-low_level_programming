@@ -1,22 +1,17 @@
-/*
- * File: 1-listint_len.c
- * Auth: Brennan D Baraban
- */
 #include "lists.h"
-#include <stdio.h>
 /**
- *listint_len - Returns the number of elements
- *in a linked listint_t list.
- *@h: A pointer to the head of the listint_t list.
- *Return: The number of elements in the listint_t list.
- */
-size_t listint_len(const listint_t *h)
+ * print_listint - prints all the elements of a list.
+ * @h: head of a list.
+ * Return: numbers of nodes.
+ **/
+size_t print_listint(const listint_t *h)
 {
-size_t nodes = 0;
-while (h)
+size_t nnodes = 0;
+while (h != NULL)
 {
-nodes++;
+printf("%d\n", h->n);
 h = h->next;
+nnodes++;
 }
-return (nodes);
+return (nnodes);
 }
