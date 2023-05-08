@@ -1,9 +1,9 @@
 #include "main.h"
 /**
- * create_file - a program that creates a file
- * @filename: filename
- * @text_content: content written on the file
- * Return: 1 if success; -1 if fail
+ * create_file - a program that creates a file;
+ * @filename: filename.
+ * @text_content: content on the file.
+ * Return: 1 if success; -1 if fail.
  */
 int create_file(const char *filename, char *text_content)
 {
