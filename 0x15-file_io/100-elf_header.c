@@ -76,7 +76,7 @@ printf("<unknown: %x>\n", type);
  * @ptr:the magic.
  * Return: nil return.
  **/
-void print_osabi(char *ptr)
+void print_Triz(char *ptr)
 {
 char osabi = ptr[7];
 printf("  OS/ABI:                            ");
