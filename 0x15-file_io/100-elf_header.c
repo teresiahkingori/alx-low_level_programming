@@ -7,9 +7,9 @@
 #include <elf.h>
 
 /**
- * print_addr - prints address
- * @ptr: magic.
- * Return: no return.
+ *  *  * print_addr - prints address
+ *   *   * @ptr: magic.
+ *    *    * Return: no return.
  **/
 void print_addr(char *ptr)
 {
@@ -72,22 +72,22 @@ else
 printf("<unknown: %x>\n", type);
 }
 /**
- * *  * print_triz - prints osabi
+ * *  * print_osabi - prints osabi
  * *   * @ptr: magic.
  * *    * Return: no return.
  **/
-void print_triz(char *ptr)
+void print_osabi(char *ptr)
 {
-char triz = ptr[7];
+char osabi = ptr[7];
 printf("  OS/ABI:                            ");
-if (triz == 0)
+if (osabi == 0)
 printf("UNIX - System V\n");
-else if (triz == 2)
+else if (osabi == 2)
 printf("UNIX - NetBSD\n");
-else if (triz == 6)
+else if (osabi == 6)
 printf("UNIX - Solaris\n");
 else
-printf("<unknown: %x>\n", triz);
+printf("<unknown: %x>\n", osabi);
 printf("  ABI Version:                       %d\n", ptr[8]);
 }
 /**
