@@ -7,9 +7,9 @@
 #include <elf.h>
 
 /**
- *  *  * print_addr - prints address
- *   *   * @ptr: magic.
- *    *    * Return: no return.
+ *  *  * print_addr - prints address.
+ *   *   * @ptr: magic..
+ *    *    * Return: no return...
  **/
 void print_addr(char *ptr)
 {
@@ -46,9 +46,9 @@ printf("%02x", 256 + ptr[i]);
 printf("\n");
 }
 /**
- * *  * print_type - prints type
- * *   * @ptr: magic.
- * *    * Return: no return.
+ * *  * print_type - prints type.
+ * *   * @ptr: magic..
+ * *    * Return: no return..
  **/
 void print_type(char *ptr)
 {
@@ -72,9 +72,9 @@ else
 printf("<unknown: %x>\n", type);
 }
 /**
- * *  * print_osabi - prints osabi
- * *   * @ptr: magic.
- * *    * Return: no return.
+ * *  * print_osabi - prints osabi.
+ * *   * @ptr: magic..
+ * *    * Return: no return..
  **/
 void print_osabi(char *ptr)
 {
@@ -91,9 +91,9 @@ printf("<unknown: %x>\n", osabi);
 printf("  ABI Version:                       %d\n", ptr[8]);
 }
 /**
- * *  * print_version - prints version
- * *   * @ptr: magic.
- * *    * Return: no return.
+ * *  * print_version - prints version.
+ * *   * @ptr: magic..
+ * *    * Return: no return..
  **/
 void print_version(char *ptr)
 {
@@ -104,9 +104,9 @@ printf(" (current)");
 printf("\n");
 }
 /**
- * *  * print_data - prints data
- * *   * @ptr: magic.
- * *    * Return: no return.
+ * *  * print_data - prints data.
+ * *   * @ptr: magic..
+ * *    * Return: no return..
  **/
 void print_data(char *ptr)
 {
@@ -118,9 +118,9 @@ if (data == 2)
 printf(", big endian\n");
 }
 /**
- * *  * print_magic - prints magic info.
- * *   * @ptr: magic.
- * *    * Return: no return.
+ * *  * print_magic - prints magic info..
+ * *   * @ptr: magic..
+ * *    * Return: no return..
  **/
 void print_magic(char *ptr)
 {
@@ -131,9 +131,9 @@ printf(" %02x", ptr[bytes]);
 printf("\n");
 }
 /**
- * *  * check_sys - check the version system.
- * *   * @ptr: magic.
- * *    * Return: no return.
+ * *  * check_sys - check the version system..
+ * *   * @ptr: magic..
+ * *    * Return: no return..
  **/
 void check_sys(char *ptr)
 {
@@ -153,9 +153,9 @@ print_type(ptr);
 print_addr(ptr);
 }
 /**
- * *  * check_elf - check if it is an elf file.
- * *   * @ptr: magic.
- * *    * Return: 1 if it is an elf file. 0 if not.
+ * *  * check_elf - check if it is an elf file..
+ * *   * @ptr: magic..
+ * *    * Return: 1 if it is an elf file. 0 if not..
  **/
 int check_elf(char *ptr)
 {
@@ -168,9 +168,9 @@ return (1);
 return (0);
 }
 /**
- * *  * main - check the code for Holberton School students.
- * *   * @argc: number of arguments.
- * *    * @argv: arguments vector.
+ * *  * main - check the code for alx School students.
+ * *   * @argc: number of arguments..
+ * *    * @argv: arguments vector..
  * *     * Return: Always 0.
  **/
 int main(int argc, char *argv[])
